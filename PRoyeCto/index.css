@@ -1,0 +1,151 @@
+/* 💙 Estilo Jazz Nocturno – Esquema de Azules */
+
+
+
+
+
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #0E1A2B; /* Azul noche profundo */
+    color: #E0E6ED; /* Gris azulado claro */
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #1F2D44; /* Azul oscuro elegante */
+    color: #D6E4F0; /* Azul hielo */
+    text-align: center;
+    padding: 2rem 1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estructura principal */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* área principal + aside */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Contenedor de contenido principal */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Secciones principales */
+section {
+    background-color: #1C2F4A; /* Azul acero */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+}
+
+/* Títulos dentro de section */
+section h2 {
+    color: #8AB4F8; /* Azul brillante (acentuado) */
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px solid #2E4A73;
+    padding-bottom: 0.3rem;
+}
+
+/* Botón */
+.aña button {
+    background-color: #2E4A73; /* Azul medio elegante */
+    color: #E0E6ED;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.aña button:hover {
+    transform: scale(1.05);
+    background-color: #4169A3; /* Azul más claro en hover */
+}
+
+/* Artículos */
+article {
+    margin-bottom: 1rem;
+    border-left: 4px solid #3B5998; /* Azul marino acento */
+    padding-left: 1rem;
+}
+
+/* Artículos títulos */
+article h3 {
+    color: #8AB4F8; /* Azul brillante */
+    margin-bottom: 0.5rem;
+}
+
+/* Aside */
+aside {
+    background-color: #243B5A; /* Azul profundo */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+aside h2 {
+    color: #8AB4F8;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #3B5998;
+    padding-bottom: 0.3rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    color: #D6E4F0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #8AB4F8;
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1F2D44; /* Azul oscuro */
+    color: #D6E4F0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        order: -1; /* el aside se muestra arriba en pantallas pequeñas */
+    }
+}
